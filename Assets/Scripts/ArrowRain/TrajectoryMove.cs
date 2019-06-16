@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ArrowRain.RandomArrow
+namespace ArrowRain
 {
 
     public class TrajectoryMove : MonoBehaviour

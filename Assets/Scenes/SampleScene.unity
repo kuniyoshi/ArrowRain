@@ -244,7 +244,8 @@ MonoBehaviour:
     type: 3}
   Destination: {fileID: 1558215908}
   Count: 15
-  Velocity: {x: 3, y: 10, z: 3}
+  Velocity: {x: 0, y: 10, z: 3}
+  Variance: {x: 0, y: 0, z: 0}
   Radius: 2
 --- !u!108 &705507994 stripped
 Light:
