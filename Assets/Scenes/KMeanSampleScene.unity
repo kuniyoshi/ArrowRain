@@ -258,6 +258,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0138533b02a884383856bcad657503fe, type: 3}
+--- !u!1 &1035294511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8167810972205201973, guid: 0138533b02a884383856bcad657503fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1035294510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1372459735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -327,6 +333,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e012202164b4ff79dea555853d4331, type: 3}
+--- !u!4 &1372459736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6559807304973890008, guid: e3e012202164b4ff79dea555853d4331,
+    type: 3}
+  m_PrefabInstance: {fileID: 1372459735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1423279165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423279166}
+  - component: {fileID: 1423279167}
+  m_Layer: 0
+  m_Name: KMeanShooter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1423279166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423279165}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1372459736}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1423279167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423279165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca86487c1ec4a5ca2a720ac3d7a981c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowPrefab: {fileID: 2206400730987257220, guid: 5a65d516ee3cf419b921abb163970c92,
+    type: 3}
+  Destination: {fileID: 1035294511}
+  Count: 15
+  Radius: 2
+  Velocity: {x: 0, y: 10, z: 3}
+  VarianceCoef: 0
+  MaxIterationCount: 1000
+  SampleSize: 300
 --- !u!1001 &1558599462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -428,11 +492,11 @@ MonoBehaviour:
   ClusterCount: 15
   Destination: {fileID: 2033079143}
   LiftUp: 0.2
-  MaxIterationCount: 10
+  MaxIterationCount: 5000
   NeedlePrefab: {fileID: 6621160562104445417, guid: 71ce1f4c8705f40a4bc9beee6a67b43b,
     type: 3}
   Radius: 2
-  SpawnCount: 30
+  SpawnCount: 300
 --- !u!4 &1629274116
 Transform:
   m_ObjectHideFlags: 0
